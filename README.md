@@ -2,6 +2,8 @@
 
 This is my first guided project for [Boot.dev](https://www.boot.dev/tracks/backend) backend bootcamp course.
 
+The Bookbot will print the word count and counts for each letter in whatever book .txt file you give it.
+
 ## Download instructions
 
 To download and use Bookbot, move to the directory you want it in and run:
