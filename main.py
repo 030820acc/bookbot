@@ -27,10 +27,11 @@ def letter_counts(str):
 
 
 def main():
-    with open("books/frankenstein.txt") as f:
+    book_path = input("BookBot will give you data about any book (.txt). Please enter the relative path for the book: ")
+    with open(book_path) as f:
         file_contents = f.read()
         letter_list = letter_dict_to_list(letter_counts(file_contents))
-        print("...begin report of books/frankenstein.txt...")
+        print(f"...begin report of {book_path}...")
         print(f"There are {word_count_of(file_contents)} words in this book \n")
         for i in range(0, len(letter_list)):
             print(f"There are {letter_list[i]['num']} {letter_list[i]['letter']}'s")
